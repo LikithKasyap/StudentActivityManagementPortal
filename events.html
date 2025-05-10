@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white ;
+        }
+        nav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    
+    .nav-left a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Clear floats after the nav bar */
+    nav::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .card-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: rgba(135, 126, 126, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(226, 221, 221, 0.1);
+            width: 32%;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="studhome.html">Home</a>
+        </div>
+    </nav> 
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="card-row">
+            <!-- Event Card 1 -->
+            <div class="card">
+                <img src="images/web.jpg" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">Basics on Web Developement</h5>
+                    <p class="card-text"><strong>Venue:</strong> SAC Hall</p>
+                    <p class="card-text"><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                    <p class="card-text"><strong>Date:</strong> 4th October 2024</p>
+                    <p class="card-text"><strong>Points:</strong> 100</p>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="card">
+                <img src="images/music.jpg" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">Singing</h5>
+                    <p class="card-text"><strong>Venue:</strong>New Seminar Hall</p>
+                    <p class="card-text"><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+                    <p class="card-text"><strong>Date:</strong> 4th October 2024</p>
+                    <p class="card-text"><strong>Points:</strong> 150</p>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="card">
+                <img src="images/webinar.jpg" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">Career Developement</h5>
+                    <p class="card-text"><strong>Venue:</strong>Rose Hall</p>
+                    <p class="card-text"><strong>Time:</strong> 3:00 PM - 6:00 PM</p>
+                    <p class="card-text"><strong>Date:</strong> 4th October 2024</p>
+                    <p class="card-text"><strong>Points:</strong> 200</p>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="card-row">
+            <!-- Event Card 4 -->
+            <div class="card">
+                <img src="images/drone.jpg" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">Drone Technology</h5>
+                    <p class="card-text"><strong>Venue:</strong>C-325</p>
+                    <p class="card-text"><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
+                    <p class="card-text"><strong>Date:</strong> 5th October 2024</p>
+                    <p class="card-text"><strong>Points:</strong> 120</p>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="card">
+                <img src="images/health.jpg" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">MentalHealth Awareness</h5>
+                    <p class="card-text"><strong>Venue:</strong>Jasmine Hall</p>
+                    <p class="card-text"><strong>Time:</strong> 11:00 AM - 2:00 PM</p>
+                    <p class="card-text"><strong>Date:</strong> 5th October 2024</p>
+                    <p class="card-text"><strong>Points:</strong> 140</p>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+
+            <!-- Event Card 6 -->
+            <div class="card">
+                <img src="images/art.jpg" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">Exploring Art</h5>
+                    <p class="card-text"><strong>Venue:</strong> Sunflower Hall</p>
+                    <p class="card-text"><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                    <p class="card-text"><strong>Date:</strong> 5th October 2024</p>
+                    <p class="card-text"><strong>Points:</strong> 180</p>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+           
+            </div>
+        </body>
+        </html>
